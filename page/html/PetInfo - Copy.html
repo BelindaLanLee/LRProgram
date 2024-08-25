@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetInfo Page</title>
+    <link rel="stylesheet" href="../css/background.css">
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- MetisMenu CSS -->
+    <link href="vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="dist/css/sb-admin-2.css"  rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- DataTables CSS -->
+    <link href="vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
+    <!-- DataTables Responsive CSS -->
+    <link href="vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/LoginPage.css">
+    <link rel="shortcut icon" href="../img/IMG-3085-1.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../css/table_color.css">
+</head>
+<body>
+    <div class="logo"></div>
+        <div class="Login-block">
+            <img src="../img/logo.png">
+            <h2 class="page-title">ペット備考情報</h2> 
+        </div>
+    <form role="form" th:action="@{/login}" method="post" id="loginForm">
+
+        <!-- pet_info -->
+            <center>
+                <div class="con">
+                <div class="con_title">
+                </div>
+            <table class="form-body">
+                <tr>
+                    <td>ネコちゃんの名前</td>
+                    <td>：ラッキー</td>
+                </tr>
+                <tr>
+                    <td>備考メッセージ</td>
+                    <td>：毎日水飲む量を確認したい</td>
+                </tr>
+                
+            </table>
+        </center>
+        </from>
+        <div style="margin-left: 46%;margin-top: 2vw;">
+            <button type="submit" class="btn btn-default" class="inside"><a href="submitPage.html" class="form-body">確定</a></button>
+        </div>
+        
+</body>
+</html>
