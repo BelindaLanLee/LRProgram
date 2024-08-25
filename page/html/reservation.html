@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)file://mac/Home/Desktop/reservation.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reservation Page</title>
+    <link rel="stylesheet" href="../css/background.css">   
+    <link rel="stylesheet" type="text/css" href="../css/table_color.css">    
+    <!-- 在<head>标签中添加以下代码 -->
+<style>
+    @font-face{
+	font-family:"newFont";
+	src:url('../font/Stick-Regular.ttf')
+  }
+  .form-body{
+    font-family: "newFont";
+    font-size: 2vw;
+  }
+  .inside{
+    font-family: "newFont";
+    font-size: 2vw;
+  }
+
+</style>
+
+</head>
+<body class="form-body">
+    <div class="logo"></div>
+    <div class="Login-block">  
+       <img src="../img/logo.png">
+            <h2 class="page-title">LRCatホテル予約</h2> 
+        </div>
+    <form role="form" th:action="@{/login}" method="post" id="loginForm">
+
+        <!-- reservation_info -->
+            <center>
+                <div class="con">
+                <div class="con_title">
+                </div>
+                <br>
+                <br>
+            <table border="" cellspacing="" cellpadding="20" width="750px">
+                <tbody>
+                  
+                <tr>
+                    <td width="200px" ><label for="room_number" >ルームタイプ</label></td>
+                    <td>
+                        <select class="inside">
+                            <option value="none" selected disabled hidden>ルーム型を選択してください</option>
+                            <option value="">スーパールーム</option>
+                            <option value="">スタンダードルーム</option>
+                            <option value="">デラックスルーム</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr >
+                    <td width="200px" ><label for="room_price" >一泊料金</label></td>
+                    <td><input type="text" value="" id="room_price" class="inside" placeholder="3000円"></td>
+                </tr>
+
+                <tr>
+                    <td width="200px" ><label for="pet_number">ペット名</label></td>
+                    <td>
+                        <select class="inside">
+                            <option value="none" selected disabled hidden >登録したネコを選択してください</option>
+                            <option value="" class="inside"></option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="400px" ><label class="class">チェックイン日</label></td>
+                    <td ><input type="date" name="fromdate" class="form-control" style="width: 10vw;"></td>
+                    <div value="" id="room_msg" class="inside"></div>          
+                                            
+                </tr>
+
+                <tr>
+                    <td width="400px" ><label class="class">チェックアウト日</label></td>
+                    <td><input type="date" name="fromdate" class="form-control" style="width: 10vw;"></td>
+                    <div value="" id="room_msg" class="inside"></div> 
+                                       
+                </tr>
+                <tr>
+                    <td width="200px" ><label for="days">宿泊期間</label></td>                 
+                    <td class="inside"><input type="text" value="" id="days" class="inside"> 天</td>                       
+                </tr>                   
+            </tbody>
+        </table>                  
+            <center>                          
+                <br>
+                <button type="submit" class="btn btn-default" class="inside"><a href="submitPage.html" class="inside">マイページへ戻る</a></button>                          
+                <button type="submit" class="btn btn-default" class="inside"><a href="reservationInfo.html" class="inside">提出</a></button>                          
+                </center>
+</form>
+</body>
+</html>

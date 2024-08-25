@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ユーザー情報</title>
+    <link rel="stylesheet" href="../css/background.css">
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- MetisMenu CSS -->
+    <link href="vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="dist/css/sb-admin-2.css"  rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- DataTables CSS -->
+    <link href="vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
+    <!-- DataTables Responsive CSS -->
+    <link href="vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/LoginPage.css">
+</head>
+<body>
+       <div class="logo"></div>
+        <div class="Login-block">  
+          <img src="../img/logo.png">
+            <h2 class="page-title">ユーザー情報管理</h2> 
+        </div>
+    <form role="form" th:action="@{/login}" method="post" id="loginForm">
+
+
+        <button type="submit" class="btn btn-default" style="margin-left: 77%;margin-bottom: -5vw;"><a href="loginPage.html">飼い主様情報追加</a></button>  
+        
+        <!-- pet_info -->
+            <center>
+                <div class="con">
+                <div class="con_title">
+                </div>
+            <table border="" style="margin-top: 50px;">
+                <thead>
+                   <div> 
+                    <tr>
+                      <th style="column-width: 100px; text-align: center;">番号</th>
+                      <th style="column-width: 100px; text-align: center;">携帯番号</th>
+                      <th style="column-width: 100px; text-align: center;">名前</th>
+                      <th style="column-width: 100px; text-align: center;">フリがな</th>
+                      <th style="column-width: 100px; text-align: center;">郵便番号</th>
+                      <th style="column-width: 100px; text-align: center;">住所</th>
+                      <th style="column-width: 100px; text-align: center;">作成時間</th>
+                      <th style="column-width: 100px; text-align: center;">更新時間</th>
+                      <th style="column-width: 100px; text-align: center;">メールアドレス</th>
+                      <th style="column-width: 100px; text-align: center;">選択</th>
+                    </tr>
+                    <tbody>
+    
+                        <tr class="table-row">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td class="selection">
+                            
+                              <select style="width: 100px;">選択
+                                  <option>削除</option>
+                                  <option>変更</option>
+                              </select>
+                              
+                          </td>
+                        </tr>                   
+                      </tbody>
+
+                  </thead>
+               </table>
+          
+                </tr>
+            </div>
+            </table>
+        
+        </center>
+        </from>
+        <div style="margin: 40px;">
+        <center>
+            <td> 
+                    
+              <button type="submit" class="btn btn-default"><a href="userinfoList.html">飼い主様情報管理</a></button>   
+              <button type="reset" class="btn btn-default"><a href="petInfoList.html">ペットの情報管理</a></button>
+              <button type="submit" class="btn btn-default"><a href="reservationInfoList.html">予約情報管理</a></button> 
+              <button type="submit" class="btn btn-default"><a href="roomInfo.html">ルームの情報管理</a></button> 
+              <button type="reset" class="btn btn-default"><a href="homePage.html">ログアウト</a></button>
+          </td>   
+          </center>
+        </div>
+</body>
+</html>

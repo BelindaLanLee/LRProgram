@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetSumbmit Page</title>
+    <link rel="stylesheet" href="../css/background.css">
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- MetisMenu CSS -->
+    <link href="vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="dist/css/sb-admin-2.css"  rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- DataTables CSS -->
+    <link href="vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
+    <!-- DataTables Responsive CSS -->
+    <link href="vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/LoginPage.css">
+    <link rel="shortcut icon" href="../img/IMG-3085-1.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../css/table_color.css"> 
+</head>
+<body class="form-body" >
+    <div class="logo"></div>
+        <div class="Login-block">
+            <img src="../img/logo.png">
+            <h2 class="page-title">ご入力情報の再確認</h2> 
+        </div>
+    <form role="form" th:action="@{/login}" method="post" id="loginForm" >
+
+        <!-- pet_info -->
+            <center>
+                <div class="con">
+                <div class="con_title">
+                </div>
+            <table style="font-size: 2vw;" >
+                <tr>
+                    <br>
+                    <br>
+                    <td width="300px" height="40px"><label for="name" >ねこちゃんの名前（必須）*：</label></td>
+                    <td>lucky</td>
+                </tr>
+                <tr>
+                    <td width="180px" height="40px"><label for="kind">ねこの品種:</td>
+                    <td>マンチカン</td>
+                </tr>
+                <tr> 
+                    <td>時間：</td>
+                    <td>2021年10月20日 </td>
+                   
+                </tr>
+                <tr>
+                    <td width="180px" height="40px"><label for="name">性別：</label></td>
+                    <td>オス</td>
+                        
+                </tr>
+                <tr>
+                    <td width="180px" height="40px"><label for="name">ねこの来店回数：</label></td>
+                    <td>
+                        0~9回
+                    </td>      
+                </tr>
+                <tr>
+                    <td width="180px" height="40px"><label for="name">備考：</label></td>
+                    <td> 
+                      
+                            かわいい子です。
+                       
+                     </td>
+                </tr>
+               
+            </table>
+
+                <button type="submit" class="btn btn-default" style="font-size: 2vw; margin:1vw;"><a href="PetReset.html">変更</a></button>
+                <button type="reset" class="btn btn-default" style="font-size: 2vw;"><a href="submitPage.html">確認</a></button>
+
+        </center>
+        </from>
+</body>
+</html>

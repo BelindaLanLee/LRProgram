@@ -1,0 +1,81 @@
+@charset "UTF-8";
+@font-face{
+	font-family:"newFont";
+	src:url('../font/Stick-Regular.ttf')
+  }
+
+
+.body-words{
+  font-family: newFont;
+  margin-top: 5vw;
+  margin-left: 10vw;
+}
+
+.navbar-header {
+    position: fixed;
+    background-color: rgba(255, 167, 183, 0.475);
+    display: flex; /* 将子元素横向排列 */
+    right: 0;
+    top: -2vw;
+    justify-content: flex-end; /* 从右边开始横向分布 */
+    list-style: none; /* 取消列表项的默认小黑点 */
+    padding: 0; /* 取消列表项的默认内边距 */
+    z-index: 2; /* 添加z-index属性 */
+   
+
+}
+
+
+.navbar-header li {
+  font-family: "newFont";
+    display: inline-block; /* 将列表项显示为行内元素 */
+    margin-right: 10px; /* 设置列表项之间的间距 */
+    
+}
+.navbar-header a {
+    font-size: 80%;
+    color: white; /* 设置文字颜色为白色 */
+    text-decoration: none; /* 取消下划线 */
+}
+
+.catlogo {
+    position: relative;
+    z-index: 2; /* 添加z-index属性 */
+}
+
+#homepagecat-logo{
+  background-color: rgb( 255  167   183);
+ 
+}
+
+.catlogo img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: auto;
+}
+.nekoHP img{
+   width: 100vw;
+   height: auto;
+   margin-top: 5vw;
+}
+
+.nekoHP {
+    position: relative;
+  }
+  
+  .image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .catTail {
+    margin-left: -100vw; /* 调整此值以使尾巴靠近猫 */
+    margin-bottom: 5vw;
+    transition: transform 0.3s ease-in-out;
+  }
+  .catTail:hover {
+    transform: rotate(10deg); /* 调整此值以控制尾巴的摆动幅度 */
+  }

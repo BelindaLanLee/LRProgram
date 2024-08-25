@@ -1,0 +1,43 @@
+@charset"UTF-8";
+@font-face{
+	font-family:"newFont";
+	src:url('../font/Stick-Regular.ttf')
+  }
+  .form-style{
+    font-family:"newFont";  
+    font-size: 2vw;
+  }
+  .form-body{
+    margin-top: 2vw;
+    font-family:"newFont";
+    font-size: 2vw;
+  }
+#body{
+    padding: 15px;
+}
+
+#submit-button{
+    padding-left: 45%;
+}
+
+.Login-block{
+    width: auto;
+    height:10vw;
+    background-color: rgb(255, 167, 183);
+   
+}
+.Login-block img{
+    width: 20%;
+    height: auto;
+}
+
+.page-title{
+    line-height: 1vw;
+    margin-top: -4vw;
+    text-align: center;
+    font-family: newFont;
+    font-size: 4vw;
+}
+
+
+

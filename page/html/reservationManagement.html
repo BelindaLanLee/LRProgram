@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reservationManagement</title>
+    <link rel="stylesheet" href="../css/background.css">
+    <link rel="stylesheet" type="text/css" href="../css/table_color.css"> 
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- MetisMenu CSS -->
+    <link href="vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="dist/css/sb-admin-2.css"  rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- DataTables CSS -->
+    <link href="vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
+    <!-- DataTables Responsive CSS -->
+    <link href="vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/LoginPage.css">
+</head>
+<body>
+    <div class="logo"></div>
+    <div class="Login-block">  
+       <img src="../img/logo.png">
+            <h2 class="page-title">LRCat</h2> 
+    </div>
+    <form role="form" th:action="@{/login}" method="post" id="loginForm">
+
+        <!-- pet_info -->
+            <center>
+                <div class="con">
+                    <table>
+                <br>
+                <br>        
+                <tr>
+                    <td width="100px"><label for="number">ルーム番号</label></td>
+                    <td><input type="text" placeholder="ルーム番号" id="number"></td>
+                </tr>
+
+                <tr>
+                    <td width="100px"><label for="pet_number">ペット番号</label></td>
+                    <td><input type="text" placeholder="ペット番号" id="pet_number"></td>
+                </tr>
+
+                <tr>
+                    <td width="100px"><label for="kind">チェックイン日付</td>
+                    <td><input type="date" name="fromdate" class="form-control" <="" td=""></td>
+                    
+                </tr>
+
+                <tr>
+                    <td><label>チェックアウト日付</label></td>
+                    <td><input type="date" name="fromdate" class="form-control" <="" td=""></td>
+                </tr>
+
+                <tr>
+                    <td width="100px"><label for="name">宿泊期間</label></td>
+                    <td> </td>
+                </tr>
+               
+            </table>
+        </div>
+        </center>
+
+          
+                </tr>
+            </div>
+            </table>
+        
+        </center>
+        </from>
+        <div style="margin: 40px;">
+        <center>
+            <td> 
+                   
+              <button type="submit" class="btn btn-default"><a href="roomInfo.html">追加</a></button>   
+              <button type="submit" class="btn btn-default"><a href="userinfoList.html">飼い主様情報一覧</a></button>   
+              <button type="reset" class="btn btn-default" href="#"><a href="petInfoList.html">ペットの情報一覧</a></button>
+              <button type="reset" class="btn btn-default" href="#"><a href="homePage.html">ログアウト</a></button>
+          </td>   
+          </center>
+        </div>
+</body>
+</html>

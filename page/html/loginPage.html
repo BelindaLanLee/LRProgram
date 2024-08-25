@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<script type="text/javascript" th:src="@{/js/jquery.min.js}" src="../js/jquery.min.js"></script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../css/LoginPage.css">
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- MetisMenu CSS -->
+    <link href="vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="dist/css/sb-admin-2.css"  rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- DataTables CSS -->
+    <link href="vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
+    <!-- DataTables Responsive CSS -->
+    <link href="vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="../css/LoginPage.css">
+
+
+</head>
+<body class="form-body">
+
+        <div class="Login-block">
+            <img src="../img/hotellogo.png" alt="hotelLogo">
+            <h2 class="page-title">飼い主様の新規登録</h2> 
+        </div>
+    <form role="form" th:action="@{/login}" method="post" id="loginForm">
+
+        <div id="body">
+                <!-- name -->
+                    <div class="form-group">
+                        <label>飼い主様の名前（漢字）</label>
+                        <input type="text" name="name" class="form-control"
+                            placeholder="例）神田　新一" >
+                    </div>
+        
+                <!--katakana name -->
+                    <div class="form-group">
+                        <label>飼い主様の名前（フリガナ）</label>
+                        <input type="text" name="name" class="form-control"
+                            placeholder="例）カンダ　シンイチ" >
+                    </div>
+
+                <!-- tel -->
+                    <div class="form-group">
+                        <label id="id">電話番号（必須）</label>
+                        <input type="text" name="name" class="form-control"
+                            placeholder="電話番号を入力してください（ハイフンなし）">
+                    </div>
+
+                <!-- psw -->
+                    <div class="form-group">
+                        <label>パスワード（必須）</label>
+                        <input type="password" name="name" class="form-control"
+                            placeholder="パスワードを入力してください" >
+                    </div>
+
+                <!-- email -->
+                    <div class="form-group">
+                        <label>メールアドレス（必須）</label>
+                        <input type="text" name="name" class="form-control"
+                            placeholder="メールを入力してください" >
+                    </div>
+
+                <!-- postalcode -->
+                    <div class="form-group">
+                        <label>郵便番号（必須）</label>
+                        <input type="text" name="name" class="form-control"
+                            placeholder="郵便番号を入力してください（ハイフンなし）" >
+                    </div>
+
+                <!-- adress -->
+                    <div class="form-group">
+                        <label>ご住所（必須）</label>
+                        <input type="text" name="name" class="form-control"
+                            placeholder="ご住所を入力してください" >
+                    </div>
+            <div id="submit-button">
+                <button type="submit" class="btn btn-default"><a href="loginmsgcheck.html">登録</a></button>
+                <button type="reset" class="btn btn-default">リセット</button>
+            </div>  
+        </div>
+              
+    </form>
+</body>
+
+
+</html>

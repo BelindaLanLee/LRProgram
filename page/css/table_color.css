@@ -1,0 +1,9 @@
+table {
+    border-collapse: collapse;
+  }
+  
+  td {
+    height:3vw;
+    background-color: rgba(255, 167, 183, 0.475);
+    padding: 10px;
+  }

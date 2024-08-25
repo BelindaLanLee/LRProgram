@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)file://mac/Home/Desktop/reservation.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>userInfocheck</title>
+    <link rel="stylesheet" href="../css/background.css">   
+    <link rel="stylesheet" type="text/css" href="../css/table_color.css">
+    <style>
+            @font-face{
+	font-family:"newFont";
+	src:url('../font/Stick-Regular.ttf')
+  }
+  .form-body{
+    font-family: "newFont";
+    font-size: 2vw;
+  }
+
+    </style>    
+</head>
+<body class="form-body">
+    <div class="logo"></div>
+    <div class="Login-block">  
+       <img src="../img/logo.png">
+            <h2 class="page-title"> 個人情報入力確認</h2> 
+    </div>
+    <form role="form" th:action="@{/login}" method="post" id="loginForm">
+
+        <!-- reservation_info -->
+            <center>
+                <div class="con">
+                <div class="con_title">
+                </div>
+                <br>
+                <br>
+            <table  style="font-size: 30px;">
+                <tbody>
+                <tr>
+                    <td width="300px" ><label for="username">お名前：</label></td>
+                    <td>ｘｘ</td>
+                </tr>
+                <tr>
+                    <td width="300px" ><label for="phone_number">携帯番号：</label></td>
+                    <td>070--------</td>
+                </tr>
+                <tr>
+                    <td width="300px" ><label for="password">パスワード：</label></td>
+                    <td>********</td>
+                </tr>
+            <tr>
+                    <td width="300px" ><label class="postalcode">郵便番号：</label></td>
+                    <td>ｘｘｘｘｘｘｘ</td>
+            </tr>
+                <tr>
+                    <td width="300px" ><label class="address">ご住所：</label></td>
+                    <td>ｘｘｘｘｘｘｘｘｘｘｘ</td>
+                </tr>
+                <tr>
+                    <td width="300px" ><label for="mailaddress">メールアドレス：</label></td>                 
+                    <td>ｘｘｘｘｘｘｘ＠com.jp</td>                       
+                </tr>                   
+            </tbody>
+        </table>                  
+          
+</form>
+        <button type="submit" class="btn btn-default" class="form-body" style="margin-top: 1vw;"><a href="submitPage.html" class="form-body">提出</a></button>  
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<script type="text/javascript" th:src="@{/js/jquery.min.js}" src="../js/jquery.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>LRcat Hotel Management</title>
+    <link rel="stylesheet" href="../css/homePage.css">
+    <link rel="stylesheet" href="../css/hudong1.css">
+
+    <style>
+      .cursor {
+        width: 30px; /* 调整图像的宽度 */
+        height: 30px; /* 调整图像的高度 */
+        background-image: url("../img/nekohand.png");
+        background-size: cover;
+        position: absolute;
+        pointer-events: none;
+        z-index: 9999;   
+    }
+    </style>
+
+</head>
+<body style="background-color:rgb( 255  167   183) ;">
+    <div class="cursor" style="background-image: url('../img/nekohand.png');" ></div>
+    
+    <div id="wrapper"    >
+         <div class="catlogo" id="homepagecat-logo" >
+            <img src="../img/hotellogo.png" alt="nekologo" style="background-color: rgb( 255  167   183);">               
+         </div>
+        <nav class="navbar-header" > 
+          
+            <ul id="nav-head" class="navbar-right" style="padding-top: 3%;"  >
+                <li class="dropdown"><a href="hotelDetail.html">LRCAT HOTELとは</a></li>
+                <li class="dropdown"><a href="login.html">ログイン</a></li>
+                <li class="dropdown"><a href="loginPage.html">新規登録</a></li>
+                <li class="dropdown"><a href="#">よくある質問</a></li>
+                <li class="dropdown"><a href="#">お問い合わせ</a></li>
+            </ul>
+            
+        </nav>
+       
+    </div>
+    
+    <div class="nekoHP" style="margin-top: -5vw;">
+        <div class="image-container">
+        <img src="../img/homepageNotail.png" alt="nekohomepage">
+        <img src="../img/catTail.png" alt="nekoTail" class="catTail">
+         <!-- <div>
+            <h3 class="body-words">LRCAT HOTELに</h3>
+            <h3 class="body-words">任せてください～</h3>
+        </div> -->
+        </div>
+       
+    </div>
+    
+</body>
+
+<script type="text/javascript">
+    var cursor = document.querySelector(".cursor");
+    
+    document.addEventListener("mousemove", function (e) {
+      cursor.style.left =  e.clientX + "px"
+      cursor.style.top =  e.clientY + "px";
+    });
+  </script>
+
+</html>

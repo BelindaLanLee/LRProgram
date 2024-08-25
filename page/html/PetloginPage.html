@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PETLogin Page</title>
+    <link rel="stylesheet" href="../css/background.css">
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- MetisMenu CSS -->
+    <link href="vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="dist/css/sb-admin-2.css"  rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- DataTables CSS -->
+    <link href="vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
+    <!-- DataTables Responsive CSS -->
+    <link href="vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/LoginPage.css">
+    <link rel="shortcut icon" href="../img/IMG-3085-1.png" type="image/x-icon">
+
+</head>
+<body class="form-body">
+         <div class="logo"></div>
+         <div class="Login-block">  
+            <img src="../img/logo.png">
+            <h1 class="page-title">ペットの情報</h1> 
+         </div> 
+   
+    <form role="form" th:action="@{/login}" method="post" id="loginForm">
+
+        <!-- pet_info -->
+            <center>
+                <div class="con">
+                <div class="con_title">
+                </div>
+            <table border="" cellspacing="" cellpadding="30" style="font-size: 20px;">
+                <br>
+                <br>
+                <tr>
+                    <td width="180px" height="40px"><label for="name">ねこちゃんの名前（必須）*：</label></td>
+                    <td><input type="text"style="width:750px; height:40px;" placeholder="ねこの名前を入力してください" id="name"></td>
+                </tr>
+                <tr>
+                    <td width="180px" height="40px"><label for="kind">ねこの品種:</td>
+                    <td><input type = "text"style="width:750px; height:40px;" placeholder="（分からなければ書かなくてもよい）" id="kind"</td>
+                </tr>
+                <tr>
+                    <td width="180px" height="40px"><label for="birthday">ねこ誕生日：</label></td>
+                    <td>
+                        <select name="birthday">
+                            <option value="年"></option>
+                            <option value="2010年">2010年</option>
+                            <option value="2011">2011年</option>
+                            <option value="2012">2012年</option>
+                            <option value="2013年">2013年</option>
+                            <option value="2014年">2014年</option>
+                            <option value="2015年">2015年</option>
+                            <option value="2016年">2016年</option>
+                            <option value="2017年">2017年</option>
+                            <option value="2018年">2018年</option>
+                            <option value="2019年">2019年</option>
+                            <option value="2020年">2020年</option>
+                            <option value="2021年">2021年</option>
+                            <option value="2022年">2022年</option>
+                            <option value="2023年">2023年</option>
+                        </select>
+                        <select name="birthday">
+                            <option value="月"></option>
+                            <option value="1">1月</option>
+                            <option value="2">2月</option>
+                            <option value="3">3月</option>
+                            <option value="4">4月</option>
+                            <option value="5">5月</option>
+                            <option value="6">6月</option>
+                            <option value="7">7月</option>    
+                            <option value="8">8月</option> 
+                            <option value="9">9月</option> 
+                            <option value="10">10月</option> 
+                            <option value="11">11月</option> 
+                            <option value="12">12月</option> 
+                        </select>
+                        <select name="birthday">
+                            <option value="日"></option>
+                            <option value="1">1日</option>
+                            <option value="2">2日</option>
+                            <option value="3">3日</option>
+                            <option value="4">4日</option>
+                            <option value="5">5日</option>
+                            <option value="6">6日</option>
+                            <option value="7">7日</option>    
+                            <option value="8">8日</option> 
+                            <option value="9">9日</option> 
+                            <option value="10">10日</option> 
+                            <option value="11">11日</option> 
+                            <option value="12">12日</option>
+                            <option value="12">13日</option>
+                            <option value="12">14日</option>
+                            <option value="12">15日</option>
+                            <option value="12">16日</option>
+                            <option value="12">17日</option>
+                            <option value="12">18日</option>
+                            <option value="12">19日</option>
+                            <option value="12">20日</option>
+                            <option value="12">21日</option>
+                            <option value="12">22日</option>
+                            <option value="12">23日</option>
+                            <option value="12">24日</option>
+                            <option value="12">25日</option>
+                            <option value="12">26日</option>
+                            <option value="12">27日</option>
+                            <option value="12">28日</option>
+                            <option value="12">29日</option>
+                            <option value="12">30日</option>
+                            <option value="12">31日</option>
+                        </select>
+                    
+                    </td>
+                </tr>
+                <tr>
+                    <td width="180px" height="40px"><label for="name">性別：</label></td>
+                    <td> <input type="radio" name="state" id="lending" value="0">
+                        <label for="lending">オス</label>
+                        <input type="radio" name="state" id="lended" value="1">
+                        <label for="lended">メス</label></td>   
+                </tr>
+                <tr>
+                    <td width="180px" height="40px"><label for="name">ねこの来店回数：</label></td>
+                    <td>
+                        <select name="count">
+                            <option value="来店回数"></option>
+                            <option value="0~9">0~9回</option>
+                            <option value="10~19">10~19回</option>
+                            <option value="20~29">20~29回</option>
+                            <option value="30~39">30~39回</option>
+                        </select>
+                    </td>      
+                </tr>
+                <tr>
+                    <td width="180px" height="40px"><label for="name">備考：</label></td>
+                    <td width="180px" height="40px"style="width:750px;"> 
+                        <textarea rows="20" cols="100">
+                        </textarea>
+                     </td>
+                </tr>
+               
+            </table>
+        </center>
+        </from>
+        <center>
+            <td>
+                <br>
+                <br>
+                   
+              <button type="submit" class="btn btn-default" style="font-size: 2vw; margin-bottom: 2vw; margin-top: -4vw;"><a href="PetSumbmit.html">確認へ</a></button>     
+              <button type="reset" class="btn btn-default" style="font-size: 2vw; margin-bottom: 2vw; margin-top: -4vw;">リセット</button>
+          </td>   
+          </center>
+</body>
+</html>

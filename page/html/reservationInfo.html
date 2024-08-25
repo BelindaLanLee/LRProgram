@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)file://mac/Home/Desktop/reservation.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reservationInfo Page</title>
+    <link rel="stylesheet" href="../css/background.css">   
+    <link rel="stylesheet" type="text/css" href="../css/table_color.css">
+    <style>
+            @font-face{
+	font-family:"newFont";
+	src:url('../font/Stick-Regular.ttf')
+  }
+  .form-body{
+    font-family: "newFont";
+    font-size: 2vw;
+  }
+
+    </style>    
+</head>
+<body class="form-body">
+    <div class="logo"></div>
+    <div class="Login-block">  
+       <img src="../img/logo.png">
+            <h2 class="page-title">LRCatホテル予約/履歴</h2> 
+    </div>
+    <form role="form" th:action="@{/login}" method="post" id="loginForm">
+
+        <!-- reservation_info -->
+            <center>
+                <div class="con">
+                <div class="con_title">
+                </div>
+                <br>
+                <br>
+            <table  style="font-size: 30px;">
+                <tbody>
+                <tr>
+                    <td width="300px" ><label for="room_number">ルーム番号：</label></td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td width="300px" ><label for="room_number">ルームタイプ：</label></td>
+                    <td>C</td>
+                </tr>
+                <tr>
+                    <td width="300px" ><label for="room_number">一泊料金：</label></td>
+                    <td>xxxx円</td>
+                </tr>
+                <tr>
+                    <td width="300px" ><label for="pet_number">ペット名前：</label></td>
+                    <td>lucky</td>
+                </tr>
+            <tr>
+                    <td width="300px" ><label class="class">チェックイン日付：</label></td>
+                    <td>2023年7月1日
+                        
+                </td>
+            </tr>
+                <tr>
+                    <td width="300px" ><label class="class">チェックアウト日付：</label></td>
+                    <td>2023年7月7日            
+                </td>
+                </tr>
+                <tr>
+                    <td width="300px" ><label for="days">宿泊期間：</label></td>                 
+                    <td>7 日</td>                       
+                </tr>                   
+            </tbody>
+        </table>                  
+          
+</form>
+        <button type="submit" class="btn btn-default" class="form-body" style="margin-top: 1vw;"><a href="reservation.html" class="form-body">前のページへ戻る</a></button>  
+        <button type="submit" class="btn btn-default" class="inside"><a href="submitPage.html" class="form-body">確定</a></button>
+        <button type="submit" class="btn btn-default" class="inside"><a href="reservationchange.html" class="form-body">変更</a></button>      
+    </body>
+</html>

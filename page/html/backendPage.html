@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- saved from url=(0254)file:///Users/user/Library/Containers/com.tencent.xinWeChat/Data/Library/Application%20Support/com.tencent.xinWeChat/2.0b4.0.9/98e7d42b40a601887262a421b1a4fcf6/Message/MessageTemp/4178a328670a9c5cddde260efeab4d88/File/LRProgram/page/html/profilePage.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>会計情報</title>
+    <link rel="stylesheet" href="../css/background.css">
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- MetisMenu CSS -->
+    <link href="vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="dist/css/sb-admin-2.css"  rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- DataTables CSS -->
+    <link href="vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
+    <!-- DataTables Responsive CSS -->
+    <link href="vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/LoginPage.css">
+</head>
+<body>
+         <div class="logo"></div>
+        <div class="Login-block">  
+           <img src="../img/logo.png">
+            <h2 class="page-title">会計情報</h2> 
+        </div>
+        
+    <form role="form" th:action="@{/login}" method="post" id="loginForm">
+      <center>
+      <div id="body">
+              <!-- name -->
+              <div>検索
+                <select>
+                  <option>ルーム番号</option>
+                  <option>会計状態</option>
+                </select>
+              </div>
+              <table border="" cellspacing="20" cellpadding="30" style="margin-top: 50px;">
+                <thead>
+                  <tr>
+                    <th width="100px">番号</th>
+                    <th width="100px">ルーム番号</th>
+                    <th width="100px">ルームタイプ</th>
+                    <th width="150px">ユーザー携帯番号</th>
+                    <th width="100px">ペット番号</th>
+                    <th width="100px">ルーム一泊料金</th>
+                    <th width="100px">宿泊期間</th>
+                    <th width="100px">宿泊総額料金</th>
+                    <th width="100px">会計状態</th>
+                    <th width="100px">選択</th>
+                  </tr>
+                </thead>
+                <tbody>
+          
+                  <tr class="table-row">
+                    <td></td>
+                    <td></td>
+                    <td>
+                      
+                        <select style="width: 100px;">ルームタイプ
+                            <option>A</option>
+                            <option>B</option>
+                            <option>C</option>
+                        </select>
+              
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="condition">
+                      
+                        <select style="width: 100px;">選択
+                            <option>済み</option>
+                            <option>未払い</option>
+                        </select>
+                        
+                    </td>
+                    <td class="selection">
+                      
+                        <select style="width: 100px;">会計状態
+                            <option>削除</option>
+                            <option>変更</option>
+                        </select>
+                        
+                    </td>
+                  </tr>                   
+                </tbody>
+              </table>
+      </div>
+      <br>
+      <br>
+      <div id="body">
+</div>
+    
+              <!-- pet_info -->
+                  <!-- <div class="Login-block">
+                      <h3 class="page-title">ペットの情報</h3> 
+                  </div> -->  
+     </center>
+    </form>
+
+  <div style="margin: 40px;">
+    <center>
+        <td>           
+          <button type="submit" class="btn btn-default"><a href="loginPage.html">飼い主様情報追加</a></button>   
+          <button type="submit" class="btn btn-default"><a href="userinfoList.html">飼い主様情報一覧</a></button>   
+          <button type="reset" class="btn btn-default" ><a href="petInfoList.html">ペットの情報一覧</a></button>
+          <button type="reset" class="btn btn-default" ><a href="homePage.html">ログアウト</a></button>
+      </td>   
+      </center>
+    </div>
+        
+
+</body>
+</html>

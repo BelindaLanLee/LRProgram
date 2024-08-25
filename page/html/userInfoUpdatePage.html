@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個人情報更新</title>
+    <link rel="stylesheet" href="../css/background.css">
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- MetisMenu CSS -->
+    <link href="vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="dist/css/sb-admin-2.css"  rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- DataTables CSS -->
+    <link href="vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
+    <!-- DataTables Responsive CSS -->
+    <link href="vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/LoginPage.css">
+</head>
+<body>
+        <div class="logo"></div>
+        <div class="Login-block">  
+          <img src="../img/logo.png">
+            <h2 class="page-title" >個人情報更新</h2> 
+        </div>
+    <form role="form" th:action="@{/login}" method="post" id="loginForm" class="form-style">
+
+        <!-- pet_info -->
+            <center>
+                <div class="con">
+                <div class="con_title">
+                </div>
+            <table border="" cellspacing="" cellpadding="30">
+                
+                <tr>
+                    <th width="300px">元のお名前<span><span>*</span></span><td><input type = "text" placeholder="登録したお名前" id="kind"     style="border-radius: 6%;"></td></th>
+                  </tr>
+                  <tr>
+                    <td width="300px"><label for="name">変更後の名前</label></td>
+                    <td><input type="text" placeholder="" id="name" style="border-radius: 6%;">※変更する場合のみ入力　</td>
+                </tr>
+                <tr>
+                    <td width="300px"><label for="kind">登録した携帯番号</td>
+                    <td><input type = "text" placeholder="***********" id="kind" style="border-radius: 6%;"></td>
+                </tr>
+                <tr>
+                    </tr>
+                    <tr>
+                    <th width="300px">携帯番号検証<span><span>*</span></span><td><input type = "text" placeholder="携帯番号（必須）" id="kind" style="border-radius: 6%;"></td></th>
+                  </tr>
+                  <tr>
+                      <th width="300px">新規携帯番号</th>
+                      <td class="tab01" style="">
+
+                        <input type="password" class="password inputArea" name="NEW_PW" value="" maxlength="20" style="border-radius: 6%;">※変更する場合のみ入力　半角英数字11文字</td>
+                  </tr>
+                        <tr>
+                            <th width="300px">新規携帯番号の再入力</th>
+                            <td class="tab01" style="">
+                              <input type="password" class="password inputArea" name="NEW_PW_CFM" value="" maxlength="20" style="border-radius: 6%;">※変更する場合のみ入力　半角英数字11文字</td>
+                        </tr>
+                <tr>
+                    <th width="300px">パスワード<span><span>*</span></span></th>
+                    <td><input type="text" placeholder="***********" id="name" style="border-radius: 6%;"></td>
+                    </td>
+                    </tr>
+                    <tr>
+                    <th width="300px">新規パスワード<span><span>*</span></span><td><input type = "text" placeholder="パスワード（必須）" id="kind" style="border-radius: 6%;">※変更する場合のみ入力　</td></th>
+                  </tr>
+                  <tr>
+                      <th width="300px">新規パスワード再入力</th>
+                      <td class="tab01" style="">
+
+                        <input type="password" class="password inputArea" name="NEW_PW" value="" maxlength="20" style="border-radius: 6%;">※変更する場合のみ入力　</td>
+                  </tr>
+                
+                </tr>
+                <tr>
+                    <tr>
+                        <th width="300px">郵便番号<span>*</span></span><td><input type = "text" placeholder="0000000" id="kind" style="border-radius: 6%;"></td></th>
+                      </tr>
+                      <tr>
+                          <th width="300px">新規郵便番号</th>
+                          <td class="tab01" style="">
+    
+                            <input type="password" class="password inputArea" name="NEW_PW" value="" maxlength="20" style="border-radius: 6%;">※変更する場合のみ入力　</td>
+                      </tr>
+
+                    <tr>
+                        <th width="300px">ご住所<span><span>*</span></span></th>
+                        <td><input type="text" placeholder="***********" id="name" style="border-radius: 6%;"></td>
+                        </td>
+                        </tr>
+                        <tr>
+                        <th width="300px">新しいご住所<span>*</span></span><td><input type = "text" placeholder="新しいご住所" id="kind" style="border-radius: 6%;">※変更する場合のみ入力　</td></th>
+                      </tr>
+                    </tr>
+                    <tr>
+                        <th width="300px">旧メールアドレス：<span><span>*</span></span></th>
+                        <td><input type="text" placeholder="***********" id="name" style="border-radius: 6%;"></td>
+                        </td>
+                        </tr>
+                        <tr>
+                        <th width="300px">新メールアドレス：<span>*</span></span><td><input type = "text" placeholder="新しい電子メール" id="kind" style="border-radius: 6%;">※変更する場合のみ入力　</td></th>
+                      </tr>
+                    </tr>
+                </tr>
+               
+            </table>
+        </center>
+        </from>
+        <center>
+            <td> 
+                   
+                <button type="submit" class="btn btn-default"  style="font-size: 2vw;"><a href="userInfocheck.html"  style="font-size: 2vw;">確認へ</a></button>   
+               <button type="reset" class="btn btn-default"  style="font-size: 2vw;">リセット</button>
+               <button type="submit" class="btn btn-default"><a href="submitPage.html"  style="font-size: 2vw;">マイページへ戻る</a></button> 
+          </td>   
+          </center>
+</body>
+</html>

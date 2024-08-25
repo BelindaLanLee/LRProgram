@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LRCatホテル管理システム</title>
+    <link rel="stylesheet" href="../css/background.css">
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- MetisMenu CSS -->
+    <link href="vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="dist/css/sb-admin-2.css"  rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- DataTables CSS -->
+    <link href="vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
+    <!-- DataTables Responsive CSS -->
+    <link href="vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/LoginPage.css">
+    <style>
+      li{
+        font-size: 3vw;
+        margin-left: 2vw;
+        
+      }
+    
+      h1{
+        margin-top: -5vw;
+        text-align: center;
+        
+      }
+
+    </style>
+</head>
+<body>
+        <div class="logo"></div>
+        <div class="Login-block">  
+            <img src="../img/logo.png"> 
+        </div>
+        <h1>LRCatホテル管理システム</h1>
+
+    <form role="form" th:action="@{/login}" method="post" id="loginForm">
+
+        <!-- pet_info -->
+            <left>
+                <div class="con">
+                <div class="con_title">
+                </div>
+                <section class="body">
+                  <ol>
+                    <br>
+                    <br>
+                    <li>
+                      <a href="reservationInfoList.html" style="color: black;">予約情報管理</a>
+                    </li>
+
+                    <li>
+                      <a href="userinfoList.html" style="color: black;">
+                        個人情報管理
+                      </a>
+                    </li>
+
+                    <li>
+                      <a href="petInfoList.html" style="color: black;">
+                        ペット情報管理
+                      </a>
+                    </li>
+
+
+                    <li>
+                      <a  href="roomInfo.html" style="color: black;">ルーム情報管理</a>
+                    </li>
+
+                  </ol>
+                </section>
+              </left>
+        </from>
+
+</body>
+</html>

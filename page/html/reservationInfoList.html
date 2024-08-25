@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>予約情報リスト</title>
+    <link rel="stylesheet" href="../css/background.css">
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- MetisMenu CSS -->
+    <link href="vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="dist/css/sb-admin-2.css"  rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- DataTables CSS -->
+    <link href="vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
+    <!-- DataTables Responsive CSS -->
+    <link href="vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/LoginPage.css">
+</head>
+<body>
+        <div class="logo"></div>
+        <div class="Login-block">  
+            <img src="../img/logo.png"> 
+            <h2 class="page-title">予約情報リスト</h2> 
+        </div>
+    <form role="form" th:action="@{/login}" method="post" id="loginForm">
+
+        <!-- pet_info -->
+            <center>
+                <div class="con">
+                <div class="con_title">
+                </div>
+            <table border="" style="margin-top: 50px;">
+                <thead>
+                   <div> 
+                    <tr>
+                      <th style="column-width: 100px; text-align: center;">ID</th>
+                      <th style="column-width: 100px; text-align: center;">飼い主様の名前</th>
+                      <th style="column-width: 100px; text-align: center;">フリガナ</th>
+                      <th style="column-width: 100px; text-align: center;">飼い主様の携帯番号</th>
+                      <th style="column-width: 100px; text-align: center;">ペット名前</th>
+                      <th style="column-width: 100px; text-align: center;">ルームID</th>
+                      <th style="column-width: 100px; text-align: center;">ルーム型</th>
+                      <th style="column-width: 100px; text-align: center;">一泊料金</th>
+                      <th style="column-width: 100px; text-align: center;">チェックイン日付</th>
+                      <th style="column-width: 100px; text-align: center;">チェックアウト日付</th>
+                      <th style="column-width: 100px; text-align: center;">宿泊期間</th>
+                      <th style="column-width: 100px; text-align: center;">ルーム状態</th>
+                    </tr>
+                    <tbody>
+    
+                        <tr class="table-row">
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td class="selection">
+                              <select style="width: 100px; text-align: center;">選択
+                                  <option>削除</option>
+                                  <option>変更</option>
+                              </select>
+                          </td>
+                        </tr>                   
+                      </tbody>
+
+                  </thead>
+               </table>
+          
+                </tr>
+            </div>
+            </table>
+        
+        </center>
+        </from>
+        <div style="margin: 40px;">
+        <center>
+            <td> 
+              <button type="submit" class="btn btn-default"><a href="roomInfo.html">ルームの情報管理</a></button>  
+              <button type="submit" class="btn btn-default"><a href="petInfoList.html">ペットの情報管理</a></button>  
+              <button type="submit" class="btn btn-default"><a href="userinfoList.html">飼い主様情報管理</a></button>  
+              <button type="submit" class="btn btn-default"><a href="backendPage.html">会計情報管理</a></button>  
+              <button type="reset" class="btn btn-default" href="#"><a href="login.html">ログアウト</a></button>
+          </td>   
+          </center>
+        </div>
+</body>
+</html>

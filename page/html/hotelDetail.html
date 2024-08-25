@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>LRHOTEL Detail</title>
+        
+    <link rel="stylesheet" href="../css/hotelDetail.css">
+    <link rel="stylesheet" href="../css/hotelDetailButton.css">
+    <link rel="stylesheet" href="../css/homePage.css">
+    <!-- <link rel="stylesheet" href="../css/nekotogame.css"> -->
+    <style>
+      /* 将@import放在CSS文件中 */
+      @import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+  </style>
+<script src="../js/jquery.min.js"></script>
+<script src="../js/nekotogame.js"></script>
+<script>
+  // 在此处调用和初始化相关函数
+  $(document).ready(function() {
+      initScreenAnd3D();
+      createLights();
+      createFloor();
+      createHero();
+      createBall();
+  });
+</script>
+</head>
+<body>
+  <div id="wrapper" style="font-size: 2vw;">     
+    <nav class="navbar-header"> 
+\           <ul id="nav-head" class="navbar-right" style="padding-top: 3%;">
+            <li class="dropdown"><a href="hotelDetail.html">LRCAT HOTELとは</a></li>
+          
+            <li class="dropdown"><a href="login.html">ログイン</a></li>
+            <li class="dropdown"><a href="loginPage.html">新規登録</a></li>
+            <li class="dropdown"><a href="#">よくある質問</a></li>
+            <li class="dropdown"><a href="#">お問い合わせ</a></li>
+        </ul>
+    </nav>
+</div>
+    <div class="container">
+
+        <div style="margin-bottom:  -1vw;margin-top: -2vw;">
+          <img src="../img/nekoPinkLogo.png">
+          <h3 style="margin-top: 8vw;margin-bottom: 2vw;">LRCAT　HOTELとは</h3>
+        </div>
+      
+        <div class="gallery-wrap">
+          <div class="item item-1"></div>
+          <div class="item item-2"></div>
+          <div class="item item-3"></div>
+          <div class="item item-4"></div>
+          <div class="item item-5"></div>
+        </div>
+
+       </div>     
+
+      <!--  -->
+      <h1 class="h1-title">ネコちゃんたちに、</h1>
+      <h1 class="h1-title2">快適な暮らしを～</h1>
+
+
+
+
+<h2 id="demo01">・スーパールーム　Super_room</h2>
+
+<div class="hover01 column">
+  <div>
+    <figure><img src="../img/room6.jpg" /></figure>
+    <span class="font-smail">Super_room01</span>
+  </div>
+
+  <div>
+    <figure><img src="../img/room7.jpg" /></figure>
+    <span class="font-smail">Super_room02</span>
+  </div>
+  <div>
+    <figure><img src="../img/room13.jpg" /></figure>
+    <span class="font-smail">Super_room03</span>
+  </div>
+
+  <p class="detail-p"><strong>>基本生活が満足できるスペース～<br>３０００円/一泊</strong</p>
+</div>
+  
+
+<h2 id="demo01">・スタンダードルーム　Standard_room</h2>
+<div class="hover01 column">
+  <div>
+    <figure><img src="../img/room10.png" /></figure>
+    <span class="font-smail">Standard_room01</span>
+  </div>
+  <div>
+    <figure><img src="../img/room9.png" /></figure>
+    <span class="font-smail">Standard_room02</span>
+  </div>
+  <div>
+    <figure><img src="../img/room11.jpg" /></figure>
+    <span class="font-smail">Standard_room03</span>
+  </div>
+  <p class="detail-p"><strong>より大きなスペースがある～<br>５０００円/一泊</strong></p>
+</div>
+
+<h2 id="demo01">・デラックスルーム　Deluxe_room</h2>
+<div class="hover01 column">
+  <div>
+    <figure><img src="../img/room1.jpg" /></figure>
+    <span class="font-smail">Deluxe_room01</span>
+  </div>
+  <div>
+    <figure><img src="../img/room2.jpg" /></figure>
+    <span class="font-smail">Deluxe_room02</span>
+  </div>
+  <div>
+    <figure><img src="../img/room12.jpg" /></figure>
+    <span class="font-smail">Deluxe_room03</span>
+  </div>
+  <p class="detail-p"><strong>豪華なスペースが楽しみ～<br>８０００円/一泊</strong></p>
+</div>
+
+<!-- nekotogame -->
+
+<div id="world"></div>
+
+
+<!-- 予約ボタン -->
+<a class="button-a" href="login.html">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  ログインへ
+</a>
+<a class="button-a" href="loginPage.html">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  新規登録へ
+</a>
+<a class="button-a" href="homePage.html">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+  ホームページへ戻る
+</a>
+
+</body>
+</html>

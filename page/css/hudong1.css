@@ -1,0 +1,13 @@
+ 
+.cursor {
+  position: fixed;
+  width: 3vw;
+  height: 3vw;
+  border: 1px solid #c6c6c6;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: 0.2s;
+}
