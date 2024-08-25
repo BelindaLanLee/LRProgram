@@ -17,13 +17,13 @@
 			src:url('../font/Stick-Regular.ttf')
   }
 		.cursor {
-		  width: 30px; /* 调整图像的宽度 */
+		  width: 20px; /* 调整图像的宽度 */
 		  height: 30px; /* 调整图像的高度 */
 		  background-image: url("../img/nekohand.png");
 		  background-size: cover;
 		  position: absolute;
 		  pointer-events: none;
-		  z-index: 9999;   
+		  z-index: 9999;
 		  background-color: black;
 	  }
 	  #loginForm{
@@ -37,14 +37,14 @@
 
 	<div class="container demo-1">
 		<div class="content">
-					
+
 			<div id="large-header" class="large-header">
 				<div class="catlogo">
-						<img src="../img/neko2.jpg" alt="nekologo">               
+						<img src="../img/neko2.jpg" alt="nekologo">
 					 </div>
 				<canvas id="demo-canvas"></canvas>
 				<div class="logo_box">
-					
+
 
 					<form th:action="@{/login}" method="post" id="loginForm">
 						<div class="input_outer">
@@ -80,7 +80,7 @@
 </body>
 <script type="text/javascript">
     var cursor = document.querySelector(".cursor");
-    
+
     document.addEventListener("mousemove", function (e) {
       cursor.style.left =  e.clientX + "px"
       cursor.style.top =  e.clientY + "px";
